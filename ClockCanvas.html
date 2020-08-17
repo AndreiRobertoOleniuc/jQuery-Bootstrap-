@@ -22,38 +22,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/navbar.css" rel="stylesheet" />
-    <style>
-      #nr1 {
-        background-color: beige;
-      }
-      #nr2 {
-        background-color: rgb(196, 196, 50);
-      }
-      #nr3 {
-        background-color: rgb(177, 62, 133);
-      }
-      #nr4 {
-        background-color: rgb(230, 76, 16);
-      }
-      #nr5 {
-        background-color: rgb(0, 255, 242);
-      }
-      #nr6 {
-        background-color: rgb(252, 0, 197);
-      }
-      #nr7 {
-        background-color: rgb(126, 123, 122);
-      }
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
     <header>
       <!-- Fixed navbar -->
-      <nav
-        class="navbar navbar-expand-md navbar-dark fixed-top bg-light border-bottom"
-      >
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
         <a class="navbar-brand text-dark" href="#">JQuery</a>
         <button
           class="navbar-toggler"
@@ -92,7 +67,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="Playground.html"
+              <a class="nav-link text-dark" href="Playground.html4"
                 >Playground</a
               >
             </li>
@@ -106,60 +81,20 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <div class="container-sm" id="nr1">100% wide until small breakpoint</div>
-      <div class="container-md" id="nr2">100% wide until medium breakpoint</div>
-      <div class="container-lg" id="nr3">100% wide until large breakpoint</div>
-      <div class="container-xl" id="nr4">
-        100% wide until extra large breakpoint
-      </div>
-      <br />
-      <div class="container">
-        <div class="row justify-content-md-center" id="nr6">
-          <div class="col col-lg-2" id="nr1">
-            1 of 3
-          </div>
-          <div class="col-md-auto" id="nr2">
-            Variable width content
-          </div>
-          <div class="col col-lg-2" id="nr3">
-            3 of 3
-          </div>
-        </div>
-        <div class="row" id="nr7">
-          <div class="col" id="nr3">
-            1 of 3
-          </div>
-          <div class="col-md-auto" id="nr5">
-            Variable width content
-          </div>
-          <div class="col col-lg-2" id="nr1">
-            3 of 3
-          </div>
-        </div>
-      </div>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Q2DuZtxOQIM"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="embed-responsive-16by9 embed-responsive">
-        <iframe
-          src="https://kantonsschulebaden.sharepoint.com/teams/SWIR-I18a/_layouts/15/Doc.aspx?sourcedoc={d49f13d1-622f-4e0f-998e-820f7a2d7993}&amp;action=embedview&amp;wdStartOn=1"
-          width="476px"
-          height="288px"
-          frameborder="0"
-          >Dies ist ein eingebettetes
-          <a target="_blank" href="https://office.com">Microsoft Office</a
-          >-Dokument, unterstützt von
-          <a target="_blank" href="https://office.com/webapps">Office</a
-          >.</iframe
-        >
-      </div>
+      <canvas
+        id="canvas"
+        width="400"
+        height="400"
+        style="background-color: #333;"
+      >
+      </canvas>
+      <canvas
+        id="clock"
+        width="400"
+        height="400"
+        style="background-color: rgb(207, 56, 56);"
+      >
+      </canvas>
     </main>
 
     <footer class="footer">
@@ -176,6 +111,8 @@
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+    <script src="js/clock.js"></script>
+    <script></script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
