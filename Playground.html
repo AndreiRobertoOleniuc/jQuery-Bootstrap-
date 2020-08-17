@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet" />
+    <style>
+      #nr1 {
+        background-color: beige;
+      }
+      #nr2 {
+        background-color: rgb(196, 196, 50);
+      }
+      #nr3 {
+        background-color: rgb(177, 62, 133);
+      }
+      #nr4 {
+        background-color: rgb(230, 76, 16);
+      }
+      #nr5 {
+        background-color: rgb(0, 255, 242);
+      }
+      #nr6 {
+        background-color: rgb(252, 0, 197);
+      }
+      #nr7 {
+        background-color: rgb(126, 123, 122);
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-light border-bottom"
+      >
+        <a class="navbar-brand text-dark" href="#">JQuery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="Home.html"
+                >Start <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="jQuery Beschreibung.html"
+                >jQuery Beschreibung</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="La_152_7716.html"
+                >Mouse Over</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Jumbo.html">Jumbotron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="RainEffect.html"
+                >Rain Effect</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Playground.html"
+                >Playground</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div class="container-sm" id="nr1">100% wide until small breakpoint</div>
+      <div class="container-md" id="nr2">100% wide until medium breakpoint</div>
+      <div class="container-lg" id="nr3">100% wide until large breakpoint</div>
+      <div class="container-xl" id="nr4">
+        100% wide until extra large breakpoint
+      </div>
+      <br />
+      <div class="container">
+        <div class="row justify-content-md-center" id="nr6">
+          <div class="col col-lg-2" id="nr1">
+            1 of 3
+          </div>
+          <div class="col-md-auto" id="nr2">
+            Variable width content
+          </div>
+          <div class="col col-lg-2" id="nr3">
+            3 of 3
+          </div>
+        </div>
+        <div class="row" id="nr7">
+          <div class="col" id="nr3">
+            1 of 3
+          </div>
+          <div class="col-md-auto" id="nr5">
+            Variable width content
+          </div>
+          <div class="col col-lg-2" id="nr1">
+            3 of 3
+          </div>
+        </div>
+      </div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Q2DuZtxOQIM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="embed-responsive-16by9 embed-responsive">
+        <iframe
+          src="https://kantonsschulebaden.sharepoint.com/teams/SWIR-I18a/_layouts/15/Doc.aspx?sourcedoc={d49f13d1-622f-4e0f-998e-820f7a2d7993}&amp;action=embedview&amp;wdStartOn=1"
+          width="476px"
+          height="288px"
+          frameborder="0"
+          >Dies ist ein eingebettetes
+          <a target="_blank" href="https://office.com">Microsoft Office</a
+          >-Dokument, unterstützt von
+          <a target="_blank" href="https://office.com/webapps">Office</a
+          >.</iframe
+        >
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">@Andrei Oleniuc</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

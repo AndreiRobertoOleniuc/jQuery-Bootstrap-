@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+        <a class="navbar-brand text-dark" href="#">JQuery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="Home.html"
+                >Start <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="jQuery Beschreibung.html"
+                >jQuery Beschreibung</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="La_152_7716.html"
+                >Mouse Over</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Jumbo.html">Jumbotron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="RainEffect.html"
+                >Rain Effect</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Playground.html4"
+                >Playground</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1
+        class="mt-5 border-bottom border-light text-dark"
+        style="padding-bottom: 1em;"
+      >
+        Meine jQuery Website mit Bootstrap
+      </h1>
+      <br />
+      <h4 class="text-dark">Startseite</h4>
+      <br />
+      <h5 class="text-dark">Mein Beispiel</h5>
+      <p>
+        Wenn man über den Text unten Hovert wird dies in der Console gemeldet
+      </p>
+      <p class="lead" id="trext">Auf diesen Absatz kann reagiert werden</p>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Vorname</th>
+              <th>Nachname</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Susanne</td>
+              <td>Muster</td>
+            </tr>
+            <tr>
+              <td>Rudi</td>
+              <td>Rüssel</td>
+            </tr>
+            <tr>
+              <td>Bert</td>
+              <td>Baummann</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">@Andrei Oleniuc</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+      $("#trext").mouseover(function () {
+        console.log("Es wurde auf dem p Text gedrückt");
+      });
+      $("table tr").mouseenter(function () {
+        $(this).addClass("colored");
+      });
+      $("table tr").mouseleave(function () {
+        $(this).removeClass("colored");
+      });
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
