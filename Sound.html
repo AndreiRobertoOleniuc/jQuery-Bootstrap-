@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+        <a class="navbar-brand text-dark" href="#">JQuery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="Home.html"
+                >Start <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="jQuery Beschreibung.html"
+                >jQuery Beschreibung</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="La_152_7716.html"
+                >Mouse Over</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Jumbo.html">Jumbotron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="RainEffect.html"
+                >Rain Effect</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Playground.html"
+                >Playground</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="ClockCanvas.html">Canvas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Password Check.html"
+                >Password Checker</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Sound.html">Sound</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Musikplayer.html"
+                >MusicPlayer</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <br />
+      <div class="row">
+        <div class="col"><h1 class="border-bottom border-dark">Sound</h1></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <audio controls id="number1" style="display: none;">
+            <source src="Sound/numberOne.mp3" />
+          </audio>
+          <audio controls id="number2" style="display: none;">
+            <source src="Sound/numberTwo.mp3" />
+          </audio>
+          <audio controls id="number3" style="display: none;">
+            <source src="Sound/numberThree.mp3" />
+          </audio>
+          <audio controls id="up" style="display: none;">
+            <source src="Sound/moveUp.mp3" />
+          </audio>
+          <audio controls id="down" style="display: none;">
+            <source src="Sound/moveDown.mp3" />
+          </audio>
+          <audio controls id="left" style="display: none;">
+            <source src="Sound/left.mp3" />
+          </audio>
+          <audio controls id="right" style="display: none;">
+            <source src="Sound/right.mp3" />
+          </audio>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">@Andrei Oleniuc</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("keypress", function (e) {
+        switch (e.keyCode) {
+          case 49:
+            document.getElementById("number1").play();
+            break;
+          case 50:
+            document.getElementById("number2").play();
+            break;
+          case 51:
+            document.getElementById("number3").play();
+            break;
+          case 119:
+            document.getElementById("up").play();
+            break;
+          case 115:
+            document.getElementById("down").play();
+            break;
+          case 97:
+            document.getElementById("left").play();
+            break;
+          case 100:
+            document.getElementById("right").play();
+            break;
+        }
+      });
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

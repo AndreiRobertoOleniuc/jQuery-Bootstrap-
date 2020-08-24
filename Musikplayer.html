@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+        <a class="navbar-brand text-dark" href="#">JQuery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="Home.html"
+                >Start <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="jQuery Beschreibung.html"
+                >jQuery Beschreibung</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="La_152_7716.html"
+                >Mouse Over</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Jumbo.html">Jumbotron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="RainEffect.html"
+                >Rain Effect</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Playground.html"
+                >Playground</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="ClockCanvas.html">Canvas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Password Check.html"
+                >Password Checker</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Sound.html">Sound</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="Musikplayer.html"
+                >MusicPlayer</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <br />
+      <div class="row">
+        <div class="col">
+          <h1 class="border-bottom border-dark">MusicPlayer</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <div id="field" style="width: 300px; height: 400px;"></div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <audio controls id="song1" style="display: none;">
+            <source src="Sound/Galactic_Damages.mp3" />
+          </audio>
+          <audio controls id="song2" style="display: none;">
+            <source src="Sound/Finding_the_Balance.mp3" />
+          </audio>
+          <audio controls id="song3" style="display: none;">
+            <source src="Sound/Epic_Unease.mp3" />
+          </audio>
+          <audio controls id="song4" style="display: none;">
+            <source src="Sound/Blue_Skies.mp3" />
+          </audio>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">@Andrei Oleniuc</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("keypress", function (e) {
+        switch (e.keyCode) {
+          case 49:
+            document.getElementById("song1").play();
+            document.getElementById("song2").pause();
+            document.getElementById("song3").pause();
+            document.getElementById("song4").pause();
+            $("#track2").remove();
+            $("#track3").remove();
+            $("#track4").remove();
+            $("#track1").remove();
+            $("#field").append(
+              "<h1 class=text-white id=track1>GALATIC DAMAGE</h1>"
+            );
+            $("#field").css("background", "black");
+            break;
+          case 50:
+            document.getElementById("song2").play();
+            document.getElementById("song1").pause();
+            document.getElementById("song3").pause();
+            document.getElementById("song4").pause();
+            $("#track2").remove();
+            $("#track3").remove();
+            $("#track4").remove();
+            $("#track1").remove();
+            $("#field").append(
+              "<h1 class=text-white id=track2>FINDING THE BALANCE</h1>"
+            );
+            $("#field").css("background", "red");
+            break;
+          case 51:
+            document.getElementById("song3").play();
+            document.getElementById("song2").pause();
+            document.getElementById("song1").pause();
+            document.getElementById("song4").pause();
+            $("#track2").remove();
+            $("#track3").remove();
+            $("#track4").remove();
+            $("#track1").remove();
+            $("#field").append(
+              "<h1 class=text-white id=track3>EPIC UNEASE</h1>"
+            );
+            $("#field").css("background", "green");
+            break;
+          case 52:
+            document.getElementById("song4").play();
+            document.getElementById("song2").pause();
+            document.getElementById("song3").pause();
+            document.getElementById("song1").pause();
+            $("#track2").remove();
+            $("#track3").remove();
+            $("#track4").remove();
+            $("#track1").remove();
+            $("#field").append(
+              "<h1 class=text-white id=track4>BLUE SKIES</h1>"
+            );
+            $("#field").css("background", "skyblue");
+            break;
+          case 113:
+            document.getElementById("song4").currentTime = 0;
+            document.getElementById("song3").currentTime = 0;
+            document.getElementById("song2").currentTime = 0;
+            document.getElementById("song1").currentTime = 0;
+            document.getElementById("song3").pause();
+            document.getElementById("song2").pause();
+            document.getElementById("song1").pause();
+            document.getElementById("song4").pause();
+            break;
+        }
+      });
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
